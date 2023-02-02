@@ -1,0 +1,59 @@
+.contactMe {
+  padding: 5rem;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.contact-me-body {
+  width: 100%;
+  align-items: center;
+  padding: 10%;
+}
+
+.card {
+  width: 600px;
+  margin: 2rem auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.form-field {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+textarea {
+  position: relative;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  width: 98%;
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}

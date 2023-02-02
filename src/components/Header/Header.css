@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding: 15rem 15rem 0rem 15rem;
+}
+.Info {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+header {
+  background-color: whitesmoke;
+}
