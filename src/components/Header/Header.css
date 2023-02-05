@@ -1,15 +1,32 @@
-.title {
+.aboutMe {
   text-align: center;
-  font-size: 5rem;
-  font-weight: bold;
-  margin: 2rem 0;
-  padding: 15rem 15rem 0rem 15rem;
-}
-.Info {
-  text-align: center;
-  padding-bottom: 10rem;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
 }
 
-header {
-  background-color: whitesmoke;
+.title {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.Info {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+  .Info {
+    font-size: 16px;
+  }
 }

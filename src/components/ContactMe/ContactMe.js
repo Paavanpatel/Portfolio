@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./ContactMe.css";
 
 const ContactMe = () => {
@@ -12,14 +12,17 @@ const ContactMe = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add logic to submit form data to a server or API
-    console.log(formData);
-  };
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      console.log(formData);
+      // Add logic to submit form data to a server or API
+    },
+    [formData]
+  );
 
   return (
-    <section className="contactMe">
+    <section className="contactMe" id="footer">
       <div className="contact-me-body">
         <div className="card">
           <form onSubmit={handleSubmit}>
@@ -31,7 +34,7 @@ const ContactMe = () => {
             </div>
             <div className="form-field">
               <input
-                type="text"
+                type="email"
                 id="contact"
                 name="contact"
                 value={formData.contact}

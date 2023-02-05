@@ -4,5 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  .element {
+    width: 100%;
+  }
 }
