@@ -13,7 +13,6 @@
 .projects-body {
   width: 87%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   text-align: center;
 }
@@ -22,8 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
-  width: 80%;
+  width: 87%;
   margin-top: 50px;
 }
 
@@ -42,18 +40,29 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.project-card:hover {
+/* .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px black;
   border: 6px solid black;
   z-index: 1;
+} */
+
+.notch-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 20px;
+  background-color: black;
+  border-radius: 0 0 50px 50px;
 }
 
 .project-card-header,
-.project-card-footer {
+.project-card-footer,
+.bottom-container {
   width: 100%;
   height: 100px;
-  background-image: linear-gradient(to bottom, whitesmoke, white);
   color: black;
   display: flex;
   align-items: center;
@@ -69,23 +78,57 @@
 
 .project-card-footer {
   background-image: linear-gradient(to top, whitesmoke, white);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 
 .project-card-body {
   width: 100%;
-  height: 300px;
+  height: 270px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
   font-size: 18px;
   font-weight: lighter;
   color: grey;
 }
+
+.bottom-container {
+  background-color: whitesmoke;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.bottom-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small;
+  text-align: center;
+}
+
+.bottom-button:hover {
+  transform: translate(-50%, -1px) scale(1.1);
+  z-index: 1;
+}
+
+/* .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px black;
+  border: 6px solid black;
+  z-index: 1;
+} */
 
 .thumbnail {
   height: 30%;
@@ -110,9 +153,7 @@
   }
   .projects-title {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0%;
-    padding-top: 20px;
+    padding: 20px 0;
     text-align: center;
   }
   .projects-cards {

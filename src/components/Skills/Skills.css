@@ -25,9 +25,13 @@
 
 .skillheadertitle {
   width: 13%;
-  /* padding-left: 50px; */
   font-size: 1em;
+  color: rgb(255, 130, 6);
   text-align: center;
+}
+.skillheadertitle p {
+  font-size: 1.2em;
+  color: black;
 }
 
 .skill {

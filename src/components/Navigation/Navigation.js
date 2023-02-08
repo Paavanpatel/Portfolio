@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Logo.png";
 import "./Navigation.css";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState(0);
+  const [scroll] = useState(0);
   const handleClick = (id) => {
     setOpen(false);
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY);
+  //   });
+  // }, []);
 
   return (
     <nav className={`navigation ${scroll > 50 ? "hidden" : ""}`}>

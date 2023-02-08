@@ -10,6 +10,7 @@ export const PROJECT_DESP_1 =
   "Developed a framework to analyze and train reinforcement learning agent a.k.a robocup soccer player to improve performance.";
 //   "A framework to analyze and train the player performance. Shoot Specific situations were harnessed using bash script. A database of 472 shoot-specific situations was created using Python. The framework can train the client (player) on the 472 shoot situations to increase the performance and differentiate the poor/good performing client.";
 export const PROJECT_TOOLS_1 = "Python, C++, bash-scripting, JSON";
+export const PROJECT_LINK_1 = "https://github.com/Paavanpatel/Extended-2d-RoboCup-Soccer-Framework";
 
 // Protfolio Website
 export const PROJECT_TITLE_2 = "PORTFOLIO WEBSITE";
@@ -18,7 +19,8 @@ export const PROJECT_TOOLS_2 = "ReactJs, HTMl, CSS";
 
 //ANDROID CHAT APPLICATION USING FIREBASE
 export const PROJECT_TITLE_3 = "ANDROID CHAT APPLICATION USING FIREBASE";
-export const PROJECT_DESP_3 = "Amazing Website that you are currently viewing is hosted on Github Pages";
+export const PROJECT_DESP_3 =
+  "Designed and developed a Chat Application using Android Studio, allowing users to send and receive messages efficiently.";
 export const PROJECT_TOOLS_3 = "ReactJs, HTMl, CSS";
 
 // SENTIMENT ANALYSIS ON TWITTER DATA

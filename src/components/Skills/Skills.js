@@ -7,6 +7,7 @@ const Skills = () => {
     <section className="skills-page" id="skills">
       <div className="skillheadertitle">
         <h1>MY SKILLS</h1>
+        <p> Here are my technical skills that I have learned and utilized in my projects.</p>
       </div>
       <div className="skills-section">
         <div className="skills-container">
