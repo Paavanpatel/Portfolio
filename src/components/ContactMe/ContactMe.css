@@ -1,17 +1,19 @@
 .contactMe {
-  padding: 3rem;
   background-color: whitesmoke;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  background-color: white;
+  filter: invert(1);
 }
 
 .contact-me-body {
   width: 100%;
   align-items: center;
-  padding: 10%;
+  padding-top: 10%;
 }
 
-.card {
+.contactCard {
   width: 600px;
   margin: 2rem auto;
   border: 2px solid black;
@@ -26,6 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: violet;
 }
 
 .statusMessage {
@@ -40,8 +43,7 @@ textarea {
   position: relative;
   padding: 0.3rem;
   border-radius: 5px;
-  border: 1px solid lightgray;
-  /* margin-bottom: 0.5rem; */
+  border: 1px solid black;
   font-size: 1rem;
   width: 98%;
   resize: none;
@@ -50,17 +52,18 @@ textarea {
 button[type="submit"] {
   background-color: black;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   margin-top: 1rem;
   width: 100px;
 }
 
 @media only screen and (max-width: 600px) {
-  .card {
+  .contactCard {
     width: 90%;
   }
 }

@@ -10,7 +10,6 @@ const ContactMe = () => {
   });
 
   const [invalidEmail, setInvalidEmailMessage] = useState("");
-  // const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const formRef = useRef();
@@ -28,13 +27,9 @@ const ContactMe = () => {
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
-      // if (!formData.name || !formData.contact || !formData.message) {
-      //   setError("I want to get in touch with you, so please make sure to fill in all the details.");
-      // } else
       if (!validateEmail(formData.contact)) {
         setInvalidEmailMessage("Invalid email entered. A valid email should look like john@example.com.");
       } else {
-        // setError("");
         emailjs.sendForm("service_urtylhs", "template_1b4v0if", formRef.current, "kHPkIaIHFPD6pBRa9").then(
           (result) => {
             console.log(result.text);
@@ -54,7 +49,7 @@ const ContactMe = () => {
   return (
     <section className="contactMe" id="footer">
       <div className="contact-me-body">
-        <div className="card">
+        <div className="contactCard">
           <form ref={formRef} onSubmit={handleSubmit}>
             <div className="form-field">
               <h1>Contact Me</h1>
@@ -102,6 +97,9 @@ const ContactMe = () => {
             </div>
           </form>
         </div>
+      </div>
+      <div>
+        <h5>Pavan Patel 2023</h5>
       </div>
     </section>
   );

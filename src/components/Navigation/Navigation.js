@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Logo.png";
+import logo from "../../logo.png";
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -12,16 +12,13 @@ const Navigation = () => {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  // useEffect(() => {
-  //   document.addEventListener("scroll", () => {
-  //     setScroll(window.scrollY);
-  //   });
-  // }, []);
-
   return (
     <nav className={`navigation ${scroll > 50 ? "hidden" : ""}`}>
       <div className="logo">
-        <img src={logo} alt="Logo" />
+        <Link to="#" onClick={() => handleClick("header")}>
+          <img src={logo} alt="Logo" />
+        </Link>
+        <h2>avan Patel</h2>
       </div>
       <div className="nav-links">
         <ul>

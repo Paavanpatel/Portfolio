@@ -6,6 +6,7 @@
   padding: 0 20px;
   background-color: black;
   color: whitesmoke;
+  display: flex;
 }
 
 .navigation {
@@ -16,14 +17,24 @@
   z-index: 999;
   transition: transform 0.3s ease-in-out;
 }
-
-.hidden {
-  transform: translateY(-100%);
+.logo {
+  width: 60%;
+  display: flex;
 }
 
+.logo h2 {
+  margin-left: -12px;
+  margin-bottom: 0;
+  align-items: baseline;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  padding-right: 10%;
+}
 .logo img {
-  height: 110px;
-  filter: invert(1);
+  height: 60px;
 }
 
 .nav-links ul,
@@ -90,6 +101,9 @@
     display: none;
   }
 
+  .logo h2 {
+    visibility: hidden;
+  }
   .hamburger {
     display: block;
   }

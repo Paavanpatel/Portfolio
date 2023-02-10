@@ -1,33 +1,75 @@
 .aboutMe {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.aboutMeContainer {
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarImg {
+  padding-top: 15%;
+}
+.avatarImg img {
+  height: 300px;
+  padding: 100px;
 }
 
 .title {
-  font-size: 72px;
-  margin-bottom: 20px;
-  color: rgb(255, 130, 6);
+  font-size: 50px;
+  color: #ff5925;
 }
 
-.Info {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  width: 80%;
-  text-align: center;
+.title h1 {
+  margin: 0;
+  padding-top: 30%;
+}
+.moreInfo {
+  font-size: 25px;
+  color: green;
+}
+
+.moreInfo img {
+  height: 40px;
+}
+
+.footerUrls {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+.footerUrls img {
+  height: 50px;
 }
 
 @media (max-width: 767px) {
-  .title {
-    font-size: 36px;
+  .aboutMe {
+    height: fit-content;
+    width: 100%;
   }
-  .Info {
-    font-size: 16px;
+  .aboutMeContainer {
+    flex-direction: column;
+    width: 70%;
+  }
+  .avatarImg img {
+    padding: 0;
+  }
+  .title h1 {
+    margin: 0;
+    padding-top: 10%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .moreInfo {
+    font-size: 26px;
   }
 }
